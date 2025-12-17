@@ -1,0 +1,16 @@
+                                         #Use file "initconds"? [True] 
+                                         #Initial condition range: [1 100] 
+2                                        #Number of states: 
+1                                        #Interface number: 
+true                                     #Reference overlaps? [False] 
+                                         #Path to MOLPRO executable: [$MOLPRO/] (autocomplete enabled) 
+.                                        #Path to scratch directory: (autocomplete enabled) 
+                                         #Use this template file? [True] 
+                                         #Do you have an initial wavefunction file? [True] 
+wf.init                                  #Initial wavefunction file: [wf.init] (autocomplete enabled) 
+                                         #MOLPRO memory: [500] 
+                                         #Number of CPUs: [1] 
+                                         #Path to wavefunction overlap executable: [$SHARC/wfoverlap.x] (autocomplete enabled) 
+                                         #Use mode 1 (i.e., calculate here)? [True] 
+                                         #Generate submission script? [False] 
+                                         #Do you want to setup the specified calculations? [True] 

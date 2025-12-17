@@ -1,0 +1,1 @@
+python /user/julia/software/SchNarc/sharc/source/../bin/wigner.py -n 100 -x freq.molden

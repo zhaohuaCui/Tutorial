@@ -1,0 +1,9 @@
+basis 6-31G*
+cartesian
+closed 18
+occ 24
+nelec 42
+roots 2 0 0
+rootpad 0 0 0 
+gradaccudefault 10e-6
+gradaccumax 10e-3

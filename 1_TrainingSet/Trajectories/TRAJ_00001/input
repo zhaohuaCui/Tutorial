@@ -1,0 +1,36 @@
+printlevel 2
+
+geomfile "geom"
+. /user/maximilian/anaconda2/bin/python $SHARC/sharcvars.sh
+veloc external
+velocfile "veloc"
+
+nstates 2 
+actstates 2 
+state 2 mch
+coeff auto
+rngseed 22011
+
+ezero    -230.7223115890
+tmax 120.000000
+stepsize 0.500000
+nsubsteps 25
+
+surf diagonal
+coupling overlap
+nogradcorrect
+ekincorrect parallel_nac
+reflect_frustrated none
+decoherence_scheme edc
+decoherence_param 0.1
+hopping_procedure sharc
+
+nac_all
+
+
+nospinorbit
+write_grad
+write_nacdr
+write_overlap
+output_format ascii
+output_dat_steps 1

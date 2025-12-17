@@ -1,0 +1,8 @@
+
+unit angstrom
+states 2 
+init
+H
+DM
+NACDR
+GRAD

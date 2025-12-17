@@ -1,0 +1,189 @@
+2021-08-25 23:21:13.122718 tellurium2 /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00100/
+
+Tasks:	H	DM	Grad	Nac(ddr)	Overlaps	Phases
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2093 -2.6119  0.0407 
+C  2.4363 -2.5332  0.0238 
+C  3.2097  0.2152 -0.0473 
+C  1.0596  1.7203 -0.0252 
+H -1.1433 -4.7249 -0.6858 
+H  3.4537 -3.8301  0.0235 
+H  4.9697  0.9525 -0.6868 
+H  0.6025  3.6935  0.1153 
+C -1.2487 -0.1184  0.1116 
+C -3.6923  0.7386  0.0169 
+H -4.0780  2.6679 -0.1880 
+H -5.2137 -0.5328 -0.0130 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+newstep: []
+nstates: 2
+unit: ['bohr']
+phases: []
+njobs: 1
+initorbs: {1: '/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/SAVE/wf.1.old'}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100
+cleanup: []
+wfoverlap: /user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/SAVE
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/integrals	2021-08-25 23:21:14.247702	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/integrals	2021-08-25 23:21:15.586534	Runtime: 0:00:01.338832	Error Code: 168
+Error Codes:
+	integrals 	168
+Some subprocesses did not finish successfully!
+2021-08-26 22:37:24.006858 thorium /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00100/
+
+Tasks:	H	DM	Grad	Nac(ddr)	Overlaps	Phases
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2093 -2.6119  0.0407 
+C  2.4363 -2.5332  0.0238 
+C  3.2097  0.2152 -0.0473 
+C  1.0596  1.7203 -0.0252 
+H -1.1433 -4.7249 -0.6858 
+H  3.4537 -3.8301  0.0235 
+H  4.9697  0.9525 -0.6868 
+H  0.6025  3.6935  0.1153 
+C -1.2487 -0.1184  0.1116 
+C -3.6923  0.7386  0.0169 
+H -4.0780  2.6679 -0.1880 
+H -5.2137 -0.5328 -0.0130 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+newstep: []
+nstates: 2
+unit: ['bohr']
+phases: []
+njobs: 1
+initorbs: {1: '/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/SAVE/wf.1.old'}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100
+cleanup: []
+wfoverlap: /user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/SAVE
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/integrals	2021-08-26 22:37:24.135887	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/integrals	2021-08-26 22:37:51.200046	Runtime: 0:00:27.064159	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/master_1	2021-08-26 22:37:55.203636	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/master_1	2021-08-26 22:38:39.876580	Runtime: 0:00:44.672944	Error Code: 0
+Error Codes:
+	master_1  	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/grad_1_1	2021-08-26 22:38:42.074604	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/grad_1_1	2021-08-26 22:39:11.833514	Runtime: 0:00:29.758910	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/nac_1_1_1_2	2021-08-26 22:39:13.577314	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/nac_1_1_1_2	2021-08-26 22:39:45.219558	Runtime: 0:00:31.642244	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/grad_1_2	2021-08-26 22:39:47.771592	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/grad_1_2	2021-08-26 22:40:12.841484	Runtime: 0:00:25.069892	Error Code: 0
+Error Codes:
+	grad_1_1  	0	nac_1_1_1_2	0	grad_1_2  	0
+
+>>>>>>>>>>>>> Starting the WFOVERLAP job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/CI_CAS_1_1	2021-08-26 22:40:13.077824	"/user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x -m 500 -f wfovl.inp"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/CI_CAS_1_1	2021-08-26 22:40:13.227480	Runtime: 0:00:00.149656	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/AOoverlap	2021-08-26 22:40:13.240808	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00100/ICOND_00100/AOoverlap	2021-08-26 22:40:14.347040	Runtime: 0:00:01.106232	Error Code: 0

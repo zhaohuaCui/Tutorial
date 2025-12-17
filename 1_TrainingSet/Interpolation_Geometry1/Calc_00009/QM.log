@@ -1,0 +1,230 @@
+2021-08-26 01:55:57.211638 fermium /global/julia/Fulvene/Interpolation_Geometry1/Calc_9
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+tmp.pdb
+
+Tasks:	H	DM	Grad	Nac(ddr)	Overlaps	Phases
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2210 -2.6200 -0.0180 
+C  2.3400 -2.5070  0.0190 
+C  3.1560  0.1430 -0.0310 
+C  1.1030  1.6490 -0.0330 
+H -1.4470 -4.2730 -0.0190 
+H  3.4920 -4.0980  0.0040 
+H  5.1500  0.7490  0.0910 
+H  1.0400  3.6710 -0.0790 
+C -1.1400  0.0150 -0.0190 
+C -3.6120  0.7470 -0.0010 
+H -4.1640  2.6680  0.0800 
+H -5.1620 -0.5400  0.0060 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+newstep: []
+nstates: 2
+unit: ['bohr']
+phases: []
+njobs: 1
+initorbs: {1: '/global/julia/Fulvene/Interpolation_Geometry1/Calc_9/SAVEDIR/wf.1.old'}
+delay: 0.0
+scratchdir: /public/fermium/scratch/tmp/julia.91780
+wfoverlap: /user/julia/software/SchNarc/sharc/bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 2000
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /global/julia/Fulvene/Interpolation_Geometry1/Calc_9
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /global/julia/Fulvene/Interpolation_Geometry1/Calc_9/SAVEDIR
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/public/fermium/scratch/tmp/julia.91780/integrals	2021-08-26 01:55:57.468274	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/public/fermium/scratch/tmp/julia.91780/integrals	2021-08-26 01:56:00.537533	Runtime: 0:00:03.069259	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/public/fermium/scratch/tmp/julia.91780/master_1	2021-08-26 01:56:10.678583	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/public/fermium/scratch/tmp/julia.91780/master_1	2021-08-26 01:56:25.257444	Runtime: 0:00:14.578861	Error Code: 0
+Error Codes:
+	master_1  	0
+
+START:	/public/fermium/scratch/tmp/julia.91780/grad_1_1	2021-08-26 01:57:18.929380	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/public/fermium/scratch/tmp/julia.91780/grad_1_1	2021-08-26 01:57:37.272727	Runtime: 0:00:18.343347	Error Code: 0
+START:	/public/fermium/scratch/tmp/julia.91780/nac_1_1_1_2	2021-08-26 01:57:45.003245	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/public/fermium/scratch/tmp/julia.91780/nac_1_1_1_2	2021-08-26 01:58:02.096786	Runtime: 0:00:17.093541	Error Code: 0
+START:	/public/fermium/scratch/tmp/julia.91780/grad_1_2	2021-08-26 01:58:15.339927	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/public/fermium/scratch/tmp/julia.91780/grad_1_2	2021-08-26 01:58:38.180593	Runtime: 0:00:22.840666	Error Code: 0
+Error Codes:
+	grad_1_1  	0	nac_1_1_1_2	0	grad_1_2  	0
+
+>>>>>>>>>>>>> Starting the WFOVERLAP job execution
+START:	/public/fermium/scratch/tmp/julia.91780/CI_CAS_1_1	2021-08-26 01:58:49.848697	"/user/julia/software/SchNarc/sharc/bin/wfoverlap.x -m 2000 -f wfovl.inp"
+FINISH:	/public/fermium/scratch/tmp/julia.91780/CI_CAS_1_1	2021-08-26 01:58:57.614653	Runtime: 0:00:07.765956	Error Code: 0
+START:	/public/fermium/scratch/tmp/julia.91780/AOoverlap	2021-08-26 01:58:57.626440	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/public/fermium/scratch/tmp/julia.91780/AOoverlap	2021-08-26 01:58:58.503059	Runtime: 0:00:00.876619	Error Code: 0
+START:	/public/fermium/scratch/tmp/julia.91780/WFOVL_1_1	2021-08-26 01:59:07.099340	"/user/julia/software/SchNarc/sharc/bin/wfoverlap.x -m 2000 -f wfovl.inp"
+FINISH:	/public/fermium/scratch/tmp/julia.91780/WFOVL_1_1	2021-08-26 01:59:15.820487	Runtime: 0:00:08.721147	Error Code: 0
+Error Codes:
+	CI_CAS_1_1	0	WFOVL_1_1 	0
+
+===> Results:
+
+=> Hamiltonian Matrix:
+Diagonal Shift:   -230.00
+Real Part:
+----------------------
+|-7.184e-01            |
+|           -5.712e-01 |
+----------------------
+
+=> Dipole Moment Matrices:
+
+Polarisation X:
+Real Part:
+----------------------
+|-1.432e-01 -7.484e-02 |
+|-7.484e-02  1.659e-01 |
+----------------------
+
+Polarisation Y:
+Real Part:
+----------------------
+| 4.333e-02 -2.088e-01 |
+|-2.088e-01 -8.807e-02 |
+----------------------
+
+Polarisation Z:
+Real Part:
+----------------------
+| 1.998e-02 -9.923e-03 |
+|-9.923e-03  2.056e-02 |
+----------------------
+
+=> Gradient Vectors:
+
+Singlet	1	Ms=  0.0:
+1	C	 0.00386	-0.00450	-0.00091	
+2	C	 0.02244	-0.00315	 0.00337	
+3	C	-0.03196	-0.00638	-0.00738	
+4	C	 0.00630	-0.00280	 0.00113	
+5	H	-0.00940	-0.00923	-0.00017	
+6	H	-0.02219	 0.01940	-0.00084	
+7	H	 0.02120	 0.00562	 0.00435	
+8	H	-0.00079	-0.00095	-0.00123	
+9	C	 0.02787	 0.00122	 0.00197	
+10	C	-0.01753	 0.00567	-0.00157	
+11	H	-0.00087	-0.01497	 0.00129	
+12	H	 0.00108	 0.01007	-0.00002	
+
+Singlet	2	Ms=  0.0:
+1	C	 0.10211	-0.06977	-0.00069	
+2	C	-0.09912	-0.07628	 0.00364	
+3	C	-0.09155	 0.12066	-0.00748	
+4	C	 0.12413	-0.00133	 0.00099	
+5	H	-0.00955	-0.00880	-0.00000	
+6	H	-0.02300	 0.01830	-0.00086	
+7	H	 0.02157	 0.00693	 0.00369	
+8	H	-0.00099	-0.00124	-0.00080	
+9	C	-0.13151	 0.04748	 0.00148	
+10	C	 0.10749	-0.03106	 0.00039	
+11	H	-0.00017	-0.01289	-0.00059	
+12	H	 0.00058	 0.00800	 0.00023	
+
+=> Analytical Non-adiabatic coupling vectors:
+
+Singlet	States 1 - 1	Ms=  0.0:
+		...is identical zero...
+
+Singlet	States 1 - 2	Ms=  0.0:
+1	C	-0.23196	 0.20554	-0.00292	
+2	C	-0.04612	 0.05159	-0.00168	
+3	C	 0.06253	 0.04015	-0.00714	
+4	C	 0.31868	 0.03069	 0.00271	
+5	H	-0.00120	 0.00431	 0.00027	
+6	H	 0.00428	-0.00116	 0.00248	
+7	H	-0.00358	 0.00217	 0.00189	
+8	H	 0.00416	 0.00295	-0.00035	
+9	C	-0.12839	-0.40990	 0.00542	
+10	C	 0.01141	 0.04374	-0.00234	
+11	H	-0.00433	 0.00270	 0.00053	
+12	H	 0.00497	-0.00011	-0.00050	
+
+Singlet	States 2 - 1	Ms=  0.0:
+1	C	 0.23196	-0.20554	 0.00292	
+2	C	 0.04612	-0.05159	 0.00168	
+3	C	-0.06253	-0.04015	 0.00714	
+4	C	-0.31868	-0.03069	-0.00271	
+5	H	 0.00120	-0.00431	-0.00027	
+6	H	-0.00428	 0.00116	-0.00248	
+7	H	 0.00358	-0.00217	-0.00189	
+8	H	-0.00416	-0.00295	 0.00035	
+9	C	 0.12839	 0.40990	-0.00542	
+10	C	-0.01141	-0.04374	 0.00234	
+11	H	 0.00433	-0.00270	-0.00053	
+12	H	-0.00497	 0.00011	 0.00050	
+
+Singlet	States 2 - 2	Ms=  0.0:
+		...is identical zero...
+
+=> Overlap matrix:
+
+Real Part:
+----------------------
+| 9.987e-01 -3.501e-04 |
+| 3.477e-04  9.987e-01 |
+----------------------
+
+=> Wavefunction Phases:
+2
+
+ 1.0  0.0
+ 1.0  0.0
+
+
+==> Runtime:
+0 Days	0 Hours	3 Minutes	18 Seconds
+
+
+===> Writing output to file QM.out in SHARC Format
+
+2021-08-26 01:59:15.932299
+#================ END ================#

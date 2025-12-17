@@ -1,0 +1,5 @@
+molpro $MOLPRO/
+scratchdir $TMPDIR//
+wfoverlap /user/julia/software/SchNarc/sharc/bin/wfoverlap.x
+memory 2000
+ncpu 1

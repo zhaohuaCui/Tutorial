@@ -1,0 +1,231 @@
+2021-08-25 23:21:15.808139 thorium /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00078/
+
+Tasks:	H	DM	Grad	Nac(ddr)	Overlaps	Phases
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2299 -2.5336 -0.0859 
+C  2.2489 -2.6181  0.1183 
+C  3.1437  0.0316  0.0211 
+C  1.1550  1.6829 -0.0126 
+H -1.3541 -4.1479 -0.2194 
+H  3.4980 -3.8856  0.0750 
+H  4.9287  0.1399  0.1759 
+H  1.1055  3.6515  0.1652 
+C -1.1804  0.0348 -0.0387 
+C -3.6020  0.8306 -0.0269 
+H -4.1373  2.8745  0.0806 
+H -5.2121 -0.6153  0.0181 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+newstep: []
+nstates: 2
+unit: ['bohr']
+phases: []
+njobs: 1
+initorbs: {1: '/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/SAVE/wf.1.old'}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078
+cleanup: []
+wfoverlap: /user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/SAVE
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/integrals	2021-08-25 23:21:17.697826	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/integrals	2021-08-25 23:23:22.799827	Runtime: 0:02:05.102001	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/master_1	2021-08-25 23:23:32.978748	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/master_1	2021-08-25 23:32:01.576963	Runtime: 0:08:28.598215	Error Code: 0
+Error Codes:
+	master_1  	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/grad_1_1	2021-08-25 23:32:05.311314	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/grad_1_1	2021-08-25 23:35:10.962205	Runtime: 0:03:05.650891	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/nac_1_1_1_2	2021-08-25 23:35:15.257607	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/nac_1_1_1_2	2021-08-25 23:36:26.236003	Runtime: 0:01:10.978396	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/grad_1_2	2021-08-25 23:36:33.456325	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/grad_1_2	2021-08-25 23:37:29.561468	Runtime: 0:00:56.105143	Error Code: 0
+Error Codes:
+	grad_1_1  	0	nac_1_1_1_2	0	grad_1_2  	0
+
+>>>>>>>>>>>>> Starting the WFOVERLAP job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/CI_CAS_1_1	2021-08-25 23:37:29.948288	"/user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x -m 500 -f wfovl.inp"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/CI_CAS_1_1	2021-08-25 23:37:30.072130	Runtime: 0:00:00.123842	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/AOoverlap	2021-08-25 23:37:30.081748	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/AOoverlap	2021-08-25 23:37:31.412541	Runtime: 0:00:01.330793	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/WFOVL_1_1	2021-08-25 23:37:31.454636	"/user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x -m 500 -f wfovl.inp"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00078/ICOND_00078/WFOVL_1_1	2021-08-25 23:37:31.514081	Runtime: 0:00:00.059445	Error Code: 0
+Error Codes:
+	CI_CAS_1_1	0	WFOVL_1_1 	0
+
+===> Results:
+
+=> Hamiltonian Matrix:
+Diagonal Shift:   -230.00
+Real Part:
+----------------------
+|-6.712e-01            |
+|           -5.167e-01 |
+----------------------
+
+=> Dipole Moment Matrices:
+
+Polarisation X:
+Real Part:
+----------------------
+|-6.484e-02 -5.912e-02 |
+|-5.912e-02  3.146e-01 |
+----------------------
+
+Polarisation Y:
+Real Part:
+----------------------
+|-2.634e-02 -2.118e-01 |
+|-2.118e-01 -1.748e-02 |
+----------------------
+
+Polarisation Z:
+Real Part:
+----------------------
+| 4.898e-02 -2.608e-02 |
+|-2.608e-02  3.370e-02 |
+----------------------
+
+=> Gradient Vectors:
+
+Singlet	1	Ms=  0.0:
+1	C	 0.03107	 0.02402	-0.00416	
+2	C	 0.06218	-0.13776	 0.01080	
+3	C	 0.12562	 0.01490	-0.00318	
+4	C	 0.00324	 0.04738	-0.00219	
+5	H	 0.02185	 0.01793	 0.00025	
+6	H	-0.08932	 0.11880	 0.00145	
+7	H	-0.13524	-0.03785	-0.00848	
+8	H	-0.00324	-0.02101	 0.00174	
+9	C	-0.01544	-0.03193	 0.00449	
+10	C	 0.03790	 0.00681	-0.00578	
+11	H	-0.00822	 0.02979	 0.00283	
+12	H	-0.03040	-0.03107	 0.00222	
+
+Singlet	2	Ms=  0.0:
+1	C	 0.12578	-0.05571	 0.00091	
+2	C	-0.05808	-0.19874	 0.00324	
+3	C	 0.07141	 0.14638	-0.00344	
+4	C	 0.11550	 0.03672	-0.00296	
+5	H	 0.02215	 0.01822	 0.00082	
+6	H	-0.09011	 0.11650	 0.00186	
+7	H	-0.13428	-0.03598	-0.00810	
+8	H	-0.00391	-0.02131	 0.00129	
+9	C	-0.17288	 0.03053	 0.00516	
+10	C	 0.16284	-0.03551	-0.00071	
+11	H	-0.00748	 0.03159	 0.00144	
+12	H	-0.03095	-0.03269	 0.00050	
+
+=> Analytical Non-adiabatic coupling vectors:
+
+Singlet	States 1 - 1	Ms=  0.0:
+		...is identical zero...
+
+Singlet	States 1 - 2	Ms=  0.0:
+1	C	-0.25025	 0.19401	-0.00812	
+2	C	-0.01441	 0.08333	-0.02260	
+3	C	 0.08003	-0.02030	-0.01253	
+4	C	 0.28052	 0.03259	 0.02430	
+5	H	-0.00370	 0.00479	 0.00552	
+6	H	 0.00641	-0.00046	 0.01211	
+7	H	-0.00588	 0.00464	 0.00652	
+8	H	 0.00370	 0.00387	-0.00147	
+9	C	-0.12276	-0.37376	-0.00419	
+10	C	 0.01393	 0.03918	-0.00117	
+11	H	-0.00368	 0.00296	-0.00116	
+12	H	 0.00542	 0.00056	-0.00071	
+
+Singlet	States 2 - 1	Ms=  0.0:
+1	C	 0.25025	-0.19401	 0.00812	
+2	C	 0.01441	-0.08333	 0.02260	
+3	C	-0.08003	 0.02030	 0.01253	
+4	C	-0.28052	-0.03259	-0.02430	
+5	H	 0.00370	-0.00479	-0.00552	
+6	H	-0.00641	 0.00046	-0.01211	
+7	H	 0.00588	-0.00464	-0.00652	
+8	H	-0.00370	-0.00387	 0.00147	
+9	C	 0.12276	 0.37376	 0.00419	
+10	C	-0.01393	-0.03918	 0.00117	
+11	H	 0.00368	-0.00296	 0.00116	
+12	H	-0.00542	-0.00056	 0.00071	
+
+Singlet	States 2 - 2	Ms=  0.0:
+		...is identical zero...
+
+=> Overlap matrix:
+
+Real Part:
+----------------------
+| 4.335e-01  1.044e-02 |
+|-1.093e-02  4.303e-01 |
+----------------------
+
+=> Wavefunction Phases:
+2
+
+ 1.0  0.0
+ 1.0  0.0
+
+
+==> Runtime:
+0 Days	0 Hours	16 Minutes	15 Seconds
+
+
+===> Writing output to file QM.out in SHARC Format
+
+2021-08-25 23:37:31.699645
+#================ END ================#

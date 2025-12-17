@@ -1,0 +1,900 @@
+2021-08-25 23:15:21.478109 fermium /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00000/
+
+Tasks:	H	DM
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2336 -2.6063  0.0000 
+C  2.3255 -2.5355  0.0000 
+C  3.1518  0.1362 -0.0000 
+C  1.0794  1.6393 -0.0000 
+H -1.4142 -4.2536  0.0001 
+H  3.5781 -4.1296  0.0000 
+H  5.0856  0.7449 -0.0002 
+H  1.0349  3.6655 -0.0001 
+C -1.1841  0.0135  0.0000 
+C -3.6194  0.7666  0.0001 
+H -4.1223  2.7350 -0.0001 
+H -5.1457 -0.5741  0.0003 
+
+nstates: 2
+unit: ['bohr']
+njobs: 1
+initorbs: {1: '/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/wf.init'}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000
+init: []
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+jobs: [1]
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/SAVE
+nacmap: []
+natom: 12
+gradmap: []
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-25 23:15:21.532801	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-25 23:15:26.779306	Runtime: 0:00:05.246505	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-25 23:15:27.429176	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-25 23:15:36.299424	Runtime: 0:00:08.870248	Error Code: 0
+Error Codes:
+	master_1  	0
+
+>>>>>>>>>>>>> Starting the WFOVERLAP job execution
+Error Codes:
+
+
+===> Results:
+
+=> Hamiltonian Matrix:
+Diagonal Shift:   -230.00
+Real Part:
+----------------------
+|-7.223e-01            |
+|           -5.712e-01 |
+----------------------
+
+=> Dipole Moment Matrices:
+
+Polarisation X:
+Real Part:
+----------------------
+|-1.260e-01 -6.555e-02 |
+|-6.555e-02  2.014e-01 |
+----------------------
+
+Polarisation Y:
+Real Part:
+----------------------
+| 3.896e-02 -2.119e-01 |
+|-2.119e-01 -6.230e-02 |
+----------------------
+
+Polarisation Z:
+Real Part:
+----------------------
+| 5.300e-06 -5.475e-08 |
+|-5.475e-08 -3.220e-06 |
+----------------------
+
+==> Runtime:
+0 Days	0 Hours	0 Minutes	15 Seconds
+
+
+===> Writing output to file QM.out in SHARC Format
+
+2021-08-25 23:15:36.553090
+#================ END ================#
+2021-08-25 23:16:01.934035 fermium /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00000/
+
+Tasks:	H	DM	Grad	Nac(ddr)
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2336 -2.6063  0.0000 
+C  2.3255 -2.5355  0.0000 
+C  3.1518  0.1362 -0.0000 
+C  1.0794  1.6393 -0.0000 
+H -1.4142 -4.2536  0.0001 
+H  3.5781 -4.1296  0.0000 
+H  5.0856  0.7449 -0.0002 
+H  1.0349  3.6655 -0.0001 
+C -1.1841  0.0135  0.0000 
+C -3.6194  0.7666  0.0001 
+H -4.1223  2.7350 -0.0001 
+H -5.1457 -0.5741  0.0003 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+nstates: 2
+unit: ['bohr']
+njobs: 1
+initorbs: {1: '/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/wf.init'}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000
+init: []
+wfoverlap: /user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/SAVE
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-25 23:16:01.995641	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-25 23:16:07.079648	Runtime: 0:00:05.084007	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-25 23:16:07.655101	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-25 23:16:17.066708	Runtime: 0:00:09.411607	Error Code: 0
+Error Codes:
+	master_1  	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_1	2021-08-25 23:16:17.831593	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_1	2021-08-25 23:16:36.367004	Runtime: 0:00:18.535411	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/nac_1_1_1_2	2021-08-25 23:16:36.896534	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/nac_1_1_1_2	2021-08-25 23:16:54.178827	Runtime: 0:00:17.282293	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_2	2021-08-25 23:16:54.699944	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_2	2021-08-25 23:17:12.267352	Runtime: 0:00:17.567408	Error Code: 0
+Error Codes:
+	grad_1_1  	0	nac_1_1_1_2	0	grad_1_2  	0
+
+>>>>>>>>>>>>> Starting the WFOVERLAP job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/CI_CAS_1_1	2021-08-25 23:17:12.347227	"/user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x -m 500 -f wfovl.inp"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/CI_CAS_1_1	2021-08-25 23:17:12.421170	Runtime: 0:00:00.073943	Error Code: 0
+Error Codes:
+	CI_CAS_1_1	0
+
+===> Results:
+
+=> Hamiltonian Matrix:
+Diagonal Shift:   -230.00
+Real Part:
+----------------------
+|-7.223e-01            |
+|           -5.712e-01 |
+----------------------
+
+=> Dipole Moment Matrices:
+
+Polarisation X:
+Real Part:
+----------------------
+|-1.260e-01 -6.555e-02 |
+|-6.555e-02  2.014e-01 |
+----------------------
+
+Polarisation Y:
+Real Part:
+----------------------
+| 3.896e-02 -2.119e-01 |
+|-2.119e-01 -6.230e-02 |
+----------------------
+
+Polarisation Z:
+Real Part:
+----------------------
+| 5.300e-06 -5.475e-08 |
+|-5.475e-08 -3.220e-06 |
+----------------------
+
+=> Gradient Vectors:
+
+Singlet	1	Ms=  0.0:
+1	C	 0.00000	-0.00001	-0.00001	
+2	C	-0.00000	 0.00003	-0.00000	
+3	C	-0.00002	-0.00002	 0.00000	
+4	C	 0.00001	 0.00000	 0.00000	
+5	H	 0.00000	-0.00001	 0.00000	
+6	H	-0.00001	-0.00000	 0.00000	
+7	H	-0.00001	 0.00001	-0.00000	
+8	H	 0.00001	 0.00000	-0.00000	
+9	C	-0.00003	 0.00001	-0.00000	
+10	C	 0.00004	-0.00001	-0.00000	
+11	H	-0.00000	 0.00000	-0.00000	
+12	H	-0.00000	-0.00000	 0.00000	
+
+Singlet	2	Ms=  0.0:
+1	C	 0.09656	-0.06776	-0.00001	
+2	C	-0.11971	-0.07050	 0.00000	
+3	C	-0.05901	 0.12577	 0.00000	
+4	C	 0.11795	 0.00142	-0.00000	
+5	H	-0.00004	 0.00041	 0.00000	
+6	H	-0.00050	-0.00122	 0.00000	
+7	H	 0.00028	 0.00129	-0.00000	
+8	H	-0.00026	-0.00032	-0.00000	
+9	C	-0.16219	 0.05016	 0.00000	
+10	C	 0.12657	-0.03914	-0.00000	
+11	H	 0.00079	 0.00193	 0.00000	
+12	H	-0.00044	-0.00204	-0.00000	
+
+=> Analytical Non-adiabatic coupling vectors:
+
+Singlet	States 1 - 1	Ms=  0.0:
+		...is identical zero...
+
+Singlet	States 1 - 2	Ms=  0.0:
+1	C	-0.23475	 0.19842	-0.00001	
+2	C	-0.04123	 0.05756	 0.00000	
+3	C	 0.06653	 0.02424	 0.00001	
+4	C	 0.30578	 0.03125	-0.00001	
+5	H	-0.00172	 0.00462	 0.00000	
+6	H	 0.00418	-0.00072	-0.00000	
+7	H	-0.00386	 0.00176	-0.00000	
+8	H	 0.00403	 0.00285	-0.00000	
+9	C	-0.12178	-0.39375	 0.00000	
+10	C	 0.01320	 0.04267	 0.00001	
+11	H	-0.00429	 0.00285	-0.00000	
+12	H	 0.00515	-0.00007	-0.00000	
+
+Singlet	States 2 - 1	Ms=  0.0:
+1	C	 0.23475	-0.19842	 0.00001	
+2	C	 0.04123	-0.05756	-0.00000	
+3	C	-0.06653	-0.02424	-0.00001	
+4	C	-0.30578	-0.03125	 0.00001	
+5	H	 0.00172	-0.00462	-0.00000	
+6	H	-0.00418	 0.00072	 0.00000	
+7	H	 0.00386	-0.00176	 0.00000	
+8	H	-0.00403	-0.00285	 0.00000	
+9	C	 0.12178	 0.39375	-0.00000	
+10	C	-0.01320	-0.04267	-0.00001	
+11	H	 0.00429	-0.00285	 0.00000	
+12	H	-0.00515	 0.00007	 0.00000	
+
+Singlet	States 2 - 2	Ms=  0.0:
+		...is identical zero...
+
+==> Runtime:
+0 Days	0 Hours	1 Minutes	10 Seconds
+
+
+===> Writing output to file QM.out in SHARC Format
+
+2021-08-25 23:17:12.552183
+#================ END ================#
+2021-08-26 16:39:57.033089 polonium1 /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00000/
+
+Tasks:	H	DM	Grad	Nac(ddr)
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2336 -2.6063  0.0000 
+C  2.3255 -2.5355  0.0000 
+C  3.1518  0.1362 -0.0000 
+C  1.0794  1.6393 -0.0000 
+H -1.4142 -4.2536  0.0001 
+H  3.5781 -4.1296  0.0000 
+H  5.0856  0.7449 -0.0002 
+H  1.0349  3.6655 -0.0001 
+C -1.1841  0.0135  0.0000 
+C -3.6194  0.7666  0.0001 
+H -4.1223  2.7350 -0.0001 
+H -5.1457 -0.5741  0.0003 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+nstates: 2
+unit: ['bohr']
+njobs: 1
+initorbs: {}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000
+init: []
+wfoverlap: /user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/SAVE
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 16:39:57.220766	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 16:40:05.456421	Runtime: 0:00:08.235655	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 16:40:06.052871	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 16:40:22.590673	Runtime: 0:00:16.537802	Error Code: 0
+2021-08-26 17:26:42.414236 thorium /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00000/
+
+Tasks:	H	DM	Grad	Nac(ddr)
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2336 -2.6063  0.0000 
+C  2.3255 -2.5355  0.0000 
+C  3.1518  0.1362 -0.0000 
+C  1.0794  1.6393 -0.0000 
+H -1.4142 -4.2536  0.0001 
+H  3.5781 -4.1296  0.0000 
+H  5.0856  0.7449 -0.0002 
+H  1.0349  3.6655 -0.0001 
+C -1.1841  0.0135  0.0000 
+C -3.6194  0.7666  0.0001 
+H -4.1223  2.7350 -0.0001 
+H -5.1457 -0.5741  0.0003 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+nstates: 2
+unit: ['bohr']
+njobs: 1
+initorbs: {}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000
+init: []
+wfoverlap: /user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/SAVE
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 17:26:42.502349	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 17:26:47.761840	Runtime: 0:00:05.259491	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 17:26:48.377299	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 17:27:12.545419	Runtime: 0:00:24.168120	Error Code: 0
+Error Codes:
+	master_1  	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_1	2021-08-26 17:27:13.358269	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+2021-08-26 17:27:20.610388 thorium /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00000/
+
+Tasks:	H	DM	Grad	Nac(ddr)
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2336 -2.6063  0.0000 
+C  2.3255 -2.5355  0.0000 
+C  3.1518  0.1362 -0.0000 
+C  1.0794  1.6393 -0.0000 
+H -1.4142 -4.2536  0.0001 
+H  3.5781 -4.1296  0.0000 
+H  5.0856  0.7449 -0.0002 
+H  1.0349  3.6655 -0.0001 
+C -1.1841  0.0135  0.0000 
+C -3.6194  0.7666  0.0001 
+H -4.1223  2.7350 -0.0001 
+H -5.1457 -0.5741  0.0003 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+nstates: 2
+unit: ['bohr']
+njobs: 1
+initorbs: {}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000
+init: []
+wfoverlap: /user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/SAVE
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 17:27:20.682788	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 17:27:25.800558	Runtime: 0:00:05.117770	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 17:27:26.405292	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 17:27:49.411741	Runtime: 0:00:23.006449	Error Code: 0
+Error Codes:
+	master_1  	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_1	2021-08-26 17:27:50.229742	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_1	2021-08-26 17:28:07.604351	Runtime: 0:00:17.374609	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/nac_1_1_1_2	2021-08-26 17:28:08.154824	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/nac_1_1_1_2	2021-08-26 17:28:25.880846	Runtime: 0:00:17.726022	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_2	2021-08-26 17:28:26.447210	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+2021-08-26 17:32:05.125832 thorium /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00000/
+
+Tasks:	H	DM	Grad	Nac(ddr)
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2336 -2.6063  0.0000 
+C  2.3255 -2.5355  0.0000 
+C  3.1518  0.1362 -0.0000 
+C  1.0794  1.6393 -0.0000 
+H -1.4142 -4.2536  0.0001 
+H  3.5781 -4.1296  0.0000 
+H  5.0856  0.7449 -0.0002 
+H  1.0349  3.6655 -0.0001 
+C -1.1841  0.0135  0.0000 
+C -3.6194  0.7666  0.0001 
+H -4.1223  2.7350 -0.0001 
+H -5.1457 -0.5741  0.0003 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+nstates: 2
+unit: ['bohr']
+njobs: 1
+initorbs: {}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000
+init: []
+wfoverlap: /user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/SAVE
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 17:32:05.192271	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 17:32:10.456434	Runtime: 0:00:05.264163	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 17:32:11.076905	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 17:32:36.802473	Runtime: 0:00:25.725568	Error Code: 0
+Error Codes:
+	master_1  	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_1	2021-08-26 17:32:37.533214	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_1	2021-08-26 17:32:55.256318	Runtime: 0:00:17.723104	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/nac_1_1_1_2	2021-08-26 17:32:55.846862	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/nac_1_1_1_2	2021-08-26 17:33:11.699553	Runtime: 0:00:15.852691	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_2	2021-08-26 17:33:12.301460	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_2	2021-08-26 17:33:28.074619	Runtime: 0:00:15.773159	Error Code: 0
+Error Codes:
+	grad_1_1  	0	nac_1_1_1_2	0	grad_1_2  	0
+
+>>>>>>>>>>>>> Starting the WFOVERLAP job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/CI_CAS_1_1	2021-08-26 17:33:28.170653	"/user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x -m 500 -f wfovl.inp"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/CI_CAS_1_1	2021-08-26 17:33:28.239723	Runtime: 0:00:00.069070	Error Code: 0
+Error Codes:
+	CI_CAS_1_1	0
+
+===> Results:
+
+=> Hamiltonian Matrix:
+Diagonal Shift:   -230.00
+Real Part:
+----------------------
+|-7.223e-01            |
+|           -5.712e-01 |
+----------------------
+
+=> Dipole Moment Matrices:
+
+Polarisation X:
+Real Part:
+----------------------
+|-1.260e-01 -6.555e-02 |
+|-6.555e-02  2.014e-01 |
+----------------------
+
+Polarisation Y:
+Real Part:
+----------------------
+| 3.896e-02 -2.119e-01 |
+|-2.119e-01 -6.230e-02 |
+----------------------
+
+Polarisation Z:
+Real Part:
+----------------------
+| 5.300e-06 -5.468e-08 |
+|-5.468e-08 -3.220e-06 |
+----------------------
+
+=> Gradient Vectors:
+
+Singlet	1	Ms=  0.0:
+1	C	 0.00000	-0.00001	-0.00001	
+2	C	-0.00000	 0.00003	-0.00000	
+3	C	-0.00002	-0.00002	 0.00000	
+4	C	 0.00001	 0.00000	 0.00000	
+5	H	 0.00000	-0.00001	 0.00000	
+6	H	-0.00001	-0.00000	 0.00000	
+7	H	-0.00001	 0.00001	-0.00000	
+8	H	 0.00001	 0.00000	-0.00000	
+9	C	-0.00003	 0.00001	-0.00000	
+10	C	 0.00004	-0.00001	-0.00000	
+11	H	-0.00000	 0.00000	-0.00000	
+12	H	-0.00000	-0.00000	 0.00000	
+
+Singlet	2	Ms=  0.0:
+1	C	 0.09656	-0.06776	-0.00001	
+2	C	-0.11971	-0.07050	 0.00000	
+3	C	-0.05901	 0.12577	 0.00000	
+4	C	 0.11795	 0.00142	-0.00000	
+5	H	-0.00004	 0.00041	 0.00000	
+6	H	-0.00050	-0.00122	 0.00000	
+7	H	 0.00028	 0.00129	-0.00000	
+8	H	-0.00026	-0.00032	-0.00000	
+9	C	-0.16219	 0.05016	 0.00000	
+10	C	 0.12657	-0.03914	-0.00000	
+11	H	 0.00079	 0.00193	 0.00000	
+12	H	-0.00044	-0.00204	-0.00000	
+
+=> Analytical Non-adiabatic coupling vectors:
+
+Singlet	States 1 - 1	Ms=  0.0:
+		...is identical zero...
+
+Singlet	States 1 - 2	Ms=  0.0:
+1	C	-0.23475	 0.19842	-0.00001	
+2	C	-0.04123	 0.05756	 0.00000	
+3	C	 0.06653	 0.02424	 0.00001	
+4	C	 0.30578	 0.03125	-0.00001	
+5	H	-0.00172	 0.00462	 0.00000	
+6	H	 0.00418	-0.00072	-0.00000	
+7	H	-0.00386	 0.00176	-0.00000	
+8	H	 0.00403	 0.00285	-0.00000	
+9	C	-0.12178	-0.39375	 0.00000	
+10	C	 0.01320	 0.04267	 0.00001	
+11	H	-0.00429	 0.00285	-0.00000	
+12	H	 0.00515	-0.00007	-0.00000	
+
+Singlet	States 2 - 1	Ms=  0.0:
+1	C	 0.23475	-0.19842	 0.00001	
+2	C	 0.04123	-0.05756	-0.00000	
+3	C	-0.06653	-0.02424	-0.00001	
+4	C	-0.30578	-0.03125	 0.00001	
+5	H	 0.00172	-0.00462	-0.00000	
+6	H	-0.00418	 0.00072	 0.00000	
+7	H	 0.00386	-0.00176	 0.00000	
+8	H	-0.00403	-0.00285	 0.00000	
+9	C	 0.12178	 0.39375	-0.00000	
+10	C	-0.01320	-0.04267	-0.00001	
+11	H	 0.00429	-0.00285	 0.00000	
+12	H	-0.00515	 0.00007	 0.00000	
+
+Singlet	States 2 - 2	Ms=  0.0:
+		...is identical zero...
+
+==> Runtime:
+0 Days	0 Hours	1 Minutes	23 Seconds
+
+
+===> Writing output to file QM.out in SHARC Format
+
+2021-08-26 17:33:28.380392
+#================ END ================#
+2021-08-26 17:34:35.763918 thorium /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+
+  ================================================================================
+||                                                                                ||
+||                         SHARC - MOLPRO2012 - Interface                         ||
+||                                                                                ||
+||                             Author: Sebastian Mai                              ||
+||                                                                                ||
+||                                  Version: 2.1                                  ||
+||                                 Date: 01.09.19                                 ||
+||                                                                                ||
+  ================================================================================
+
+
+==> QMin Job description for:
+Initial condition ICOND_00000/
+
+Tasks:	H	DM	Grad	Nac(ddr)
+States: 	2 Singlet
+
+Method:
+Electrons per Multiplicity:	42
+Job ID per Multiplicity:	1
+Level of Theory per Job ID:
+1:	SA(2+0+0)-CASSCF(6,6)/6-31G*
+
+Found Geo! NAtom is 12.
+
+Geometry in Bohrs:
+C -0.2336 -2.6063  0.0000 
+C  2.3255 -2.5355  0.0000 
+C  3.1518  0.1362 -0.0000 
+C  1.0794  1.6393 -0.0000 
+H -1.4142 -4.2536  0.0001 
+H  3.5781 -4.1296  0.0000 
+H  5.0856  0.7449 -0.0002 
+H  1.0349  3.6655 -0.0001 
+C -1.1841  0.0135  0.0000 
+C -3.6194  0.7666  0.0001 
+H -4.1223  2.7350 -0.0001 
+H -5.1457 -0.5741  0.0003 
+
+Gradients:   X X 
+
+Non-adiabatic couplings:
+. X 
+X . 
+
+wfthres: 1.0
+docicas: True
+nstates: 2
+unit: ['bohr']
+njobs: 1
+initorbs: {}
+delay: 0.0
+scratchdir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000
+init: []
+wfoverlap: /user/julia/software/SchNarc/sharc/source/../bin/wfoverlap.x
+template: {'gradaccudefault': 1e-05, 'gradaccumax': 0.01, 'basis': '6-31G*', 'occ': [24], 'nelec': {1: [42, 41, 42]}, 'closed': [18], 'rootpad': {1: [0, 0, 0]}, 'dkho': 0, 'roots': {1: [2, 0, 0]}}
+memory: 500
+multmap: {1: 1, -1: [1]}
+ndocc: 0
+jobs: [1]
+ncore: 0
+maxmult: 1
+ncpu: 1
+pwd: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000
+statemap: {1: [1, 1, 0.0], 2: [1, 2, 0.0]}
+molpro: /usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/
+nmstates: 2
+savedir: /user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/SAVE
+nacmap: [(1, 1, 1, 2)]
+natom: 12
+gradmap: [(1, 1), (1, 2)]
+joblist: [1]
+
+
+>>>>>>>>>>>>> Starting the MOLPRO job execution
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 17:34:35.792028	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/integrals	2021-08-26 17:34:40.789738	Runtime: 0:00:04.997710	Error Code: 0
+Error Codes:
+	integrals 	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 17:34:41.367273	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/master_1	2021-08-26 17:35:05.790924	Runtime: 0:00:24.423651	Error Code: 0
+Error Codes:
+	master_1  	0
+
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_1	2021-08-26 17:35:06.547420	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"
+FINISH:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/grad_1_1	2021-08-26 17:35:23.792638	Runtime: 0:00:17.245218	Error Code: 0
+START:	/user/julia/Tutorial/1_TrainingSet/Initial/ICOND_00000/ICOND_00000/nac_1_1_1_2	2021-08-26 17:35:24.431920	"/usr/license/molpro/molpros_2012_1_5_Linux_x86_64_i8/bin/molpro -W./ -I./ -d./ MOLPRO.input"

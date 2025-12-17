@@ -1,0 +1,6 @@
+molpro $MOLPRO/
+scratchdir ./ICOND_00070//
+
+memory 500
+ncpu 1
+wfoverlap $SHARC/wfoverlap.x
